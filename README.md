@@ -2,7 +2,7 @@ CTCI
 ===================================
 Practise Cracking the code interview in C++
 
-6/26/2013 (Start using github)
+6/26/2013 (Start using github)\n
 Chapter 1
 chap1_2.cpp
 chap1_4.cpp
