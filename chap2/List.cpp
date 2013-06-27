@@ -39,6 +39,14 @@ void SList::AppendtoTail(int a)
  q->setNext(p);
 }
 
+void SList::AppendtoHead(int a)
+{
+ node* p = new node(a,NULL);
+ if(head==NULL) {head=p;return;}
+ p->setNext(head);
+ head=p;
+}
+
 void SList::display()
 {
  if(head==NULL){cout << "Empty List."<<endl; return;}

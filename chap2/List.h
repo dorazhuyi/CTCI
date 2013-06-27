@@ -19,7 +19,7 @@ class SList
   SList(node*);
   bool isEmpty();
   int ListLength();
-//  void AppendtoHead(int);
+  void AppendtoHead(int);
   void AppendtoTail(int);
 //  int Delete(int);
 //  int DeleteHead();
