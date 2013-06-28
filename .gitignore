@@ -2,4 +2,6 @@
 # ignore temporary files
 *~
 # ignore object files
-.[oa]
+*.[oa]
+*.out
+
