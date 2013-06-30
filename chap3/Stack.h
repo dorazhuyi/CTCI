@@ -23,3 +23,19 @@ class LStack
  private:
   node* top;
 };
+
+class AStack
+{
+ public:
+  AStack();
+  AStack(const int);
+  bool isEmpty(){return top==0;}
+  void push(int);
+  int pop();
+ private:
+  int top;
+  int* array;
+  int length;
+  int* resize(int);
+};
+
