@@ -15,13 +15,16 @@ class node
 class LStack
 {
  public:
-  LStack(){top = NULL;}
+  LStack(){top = NULL;size=0;}
   LStack(node* t){top = t;}
   bool isEmpty(){return top==NULL;}
   void push(int);
   int pop();
+  int size(){return size;}
+  node* topnode(){return top;}
  private:
   node* top;
+  int size;
 };
 
 class AStack
@@ -32,6 +35,7 @@ class AStack
   bool isEmpty(){return top==0;}
   void push(int);
   int pop();
+  int topnode(){return top;}
  private:
   int top;
   int* array;

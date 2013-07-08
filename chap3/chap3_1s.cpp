@@ -46,8 +46,8 @@ void stack3::push(int nstack, int n)
 {
  if(top[nstack]>=limit[nstack+1])
  {
-  cout << "Stack " << nstack << " exceeds." << endl;
-  return;
+  /*cout << "Stack " << nstack << " exceeds." << endl;
+  return;*/
  }
  array[top[nstack]++]=n;
 }
