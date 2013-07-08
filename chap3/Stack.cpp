@@ -8,6 +8,7 @@ void LStack::push(int a)
  node* t = new node(a,NULL);
  if(top==NULL) top = t;
  else {t->setNext(top); top=t;}
+ size++;
 }
 
 int LStack::pop()
@@ -15,7 +16,13 @@ int LStack::pop()
  if(top==NULL){cout<<"Empty Stack."<<endl; return 0;}
  int tmp = top->value();
  top = top->nextnode();
+ size--;
  return tmp;
+}
+
+int LStack::StackSize()
+{
+	return size;
 }
 
 AStack::AStack()
